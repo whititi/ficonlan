@@ -1,0 +1,91 @@
+.torneo-presentacion img, .torneo-overlay {
+	width: 100%;
+	height: 100%;
+}
+
+.torneo-presentacion {
+	/*position: relative;*/
+	height: 500px;
+}
+.torneo-overlay {
+	transform: translate(0, -100%);
+	background-color: rgba(0,0,0,0.4);
+	height: 100%;
+	color: white;
+	display: flex;
+}
+.torneo-over-dch, .torneo-over-izq {
+	flex:2;
+	display:flex;
+	flex-direction:column;
+	width: 50%;
+	margin: 25px;
+	margin-right: 0;
+	margin-top:50px;
+	text-align: left;
+}
+.torneo-titulo {
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	flex: 1;
+	display: inline-block;
+}
+.torneo-titulo * {
+	margin: 0;
+	padding: 0;
+}
+.torneo-nombre {
+	font-size:18px;
+	font-weight: bold;
+}
+.torneo-creador {
+	font-size: 10px;
+}
+.torneo-titulo img {
+	width: 70px;
+	height: 100px;
+	float: left;
+	margin-right: 10px;
+}
+.torneo-creador {
+	color: #98ea3e;
+}
+.torneo-inicio-empieza {
+	font-weight: bold;
+	font-size: 12px;
+	margin-bottom: 3px;
+	color: lightgreen;
+}
+.torneo-inicio-fecha {
+	font-style: italic;
+	font-size: 12px;
+}
+.torneo-resumen {
+	font-size: 12px;
+	max-height: 50%;
+	flex: 3;
+}
+.torneo-info-evento, .torneo-resumen {
+	display: inline-block;
+}
+.torneo-info-evento * {
+	flex: 1;
+}
+.torneo-num-participantes {
+	font-size:; 14;
+	font-style: italic;
+	float: left;
+}
+.torneo-num-completo {
+	color: red;
+}
+.torneio-num-incompleto {
+	color: green;
+}
+.torneo-tipo {
+	float: right;
+}
+.torneo-info-evento {
+	vertical-align: bottom;
+}

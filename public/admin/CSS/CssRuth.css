@@ -1,0 +1,213 @@
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: none;
+    margin-left: none;
+    max-width: 100%;
+}
+
+.row {
+    margin-right: none;
+    margin-left: none;
+}
+
+
+/************************************************* BARRA DE NAVEGACION *************************************************/
+.barraNavegacion{
+    background-color:  #212529 ;
+    width: 100%;
+    color: #8e8e8d;
+}
+
+.barraNavegacionDcha{
+    width: 100%;
+    float: right;
+}
+
+.logo{
+    height: 50px;
+    margin-left: 10px;
+}
+
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
+
+.dropdown-menu{
+    background-color:  #212529 ;
+    /*color: #8e8e8d;*/
+}
+
+.navbar-dark .navbar-nav .nav-link{
+   color: #8e8e8d; 
+}
+
+.dropdown-item{
+    color: #8e8e8d; 
+}
+
+.botonNavegacion{
+    color: #8e8e8d;
+    background-color:  #212529 ;
+    width: 100%;
+    border: none;
+    display: inline-block;
+}
+
+/****** Para odenadores ******/
+@media (min-width: 768px) {
+    .botonNavegacion {
+        display: none;
+    }
+}
+/************************************************* MENÚ IZQUIERDO *************************************************/
+
+.menuIzquierdo{
+    float: left;
+    display: block;
+    color: #8e8e8d;
+    text-align: center;
+    text-decoration: none;
+    background-color: #212529;
+}
+
+.menuIzquierdo button{
+    width: 100%;
+    color: #8e8e8d;
+    text-align: center;
+    text-decoration: none;
+    background-color: #212529;
+    border: 1px solid #8e8e8d;
+    padding: 14px 40px;
+}
+
+
+
+.menuIzquierdo button:hover{
+    color: #212529;
+    background-color: #8e8e8d;
+    border: 1px solid #8e8e8d;
+    height: 100%;
+}
+
+
+.menuIzquierdo ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hrefMenuIz{
+    color: #8e8e8d; 
+}
+
+.hrefMenuIz:hover{
+    color: #212529; 
+}
+
+.col-2{
+    padding: 0;
+}
+
+
+
+/*********************************TABLA USUARIOS*******************************/
+.tablaUsuarios{
+    width: 100%;
+    text-align: center;
+}
+
+.tablaUsuarios td, .tablaUsuarios th{
+    border-bottom: thin solid black;
+    padding: 1%;
+}
+
+.tablaUsuarios thead th{
+    background-color: #85FA4E;
+}
+
+.tablaUsuarios tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+
+
+/***********************************PAGINA LOGIN*****************************/
+
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+
+.imagenFondo{
+    background:url('../imagenes/tumblr_static_jesus.gif');
+    height: 100%;
+
+    background-size: contain;
+    
+    display: block;
+}
+
+
+.contenedorFormularioAcceso {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-top: 7rem;
+    background-color: white; 
+}
+
+.contenedorFormulario .tituloFormularioAcceso {
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.formularioAcceso {
+  width: 100%;
+}
+
+.formularioAcceso .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+
+.entradaFormAcceso {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.entradaFormAcceso input {
+  border-radius: 1rem;
+}
+
+.imagenFondoRegistro{
+    background:url('../imagenes/tumblr_static_jesus.gif');
+
+    background-size: contain;
+    
+    display: block;
+}
+
+.contenedorFormularioRegistro {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: white; 
+}
+
+
+
+
+

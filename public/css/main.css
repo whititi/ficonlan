@@ -1,0 +1,117 @@
+body{ 
+	background-image: url('../img/fic.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	font-size: 16;
+}
+.container{
+	background-color: #fff;
+}
+.bloque-izq, .bloque-dcho {
+	margin-top: 10px;
+	height: 100% !important; 
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: top;
+}
+.bloque-izq{
+	width: 69%;
+	padding: 0 16px 0 16px;
+	height: 99%;
+	margin-bottom: auto;
+}
+.bloque-dcho{
+	width: 29%;
+	text-align: right;
+	padding: 0 0 0 16px;
+}
+.logo{
+	z-index: 3;
+	display: block;
+	margin: 0 auto;
+}
+.navbar {
+	background-color: white;
+	margin: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.5);
+	padding: 5px 30px;
+}
+#navbar-main {
+	margin:0 0 0 0 !important;
+	width: 100%;
+}
+.nav-current-button {
+	background-color: #98ea3e;
+}
+#nav-inscribirse {
+	float: right;
+	background-color: black;
+	color: white;
+	margin-left: auto;
+	margin-right: 0;
+	border-radius: 105px;
+}
+.nav-button:hover {
+	background-color: rgba(0,0,0,0.2);
+}
+#nav-inscribirse a:hover{
+	background-color: rgba(255,255,255,0.3);
+}
+a{
+	text-decoration: none;
+}
+a:active{
+	color: inherit !important;
+	text-decoration: inherit !important;
+}
+.icos-redes{
+	
+	width: 40px;
+	height: 40px;
+
+}
+.links-redes{
+	margin: auto auto 10px 0;
+	width: 33%;
+	text-align: center;
+	flex: 1;
+}
+.redes{
+	width: 100%;
+	display: flex;
+}
+.thead-green{
+	background-color: #98ea3e;
+	text-align: center;
+}
+
+#footer{margin:0; padding-top: 1%; font-size: 12px;}
+.footerPpal{background-color: #504B4B; height: 30px !important; color: #FFF;}
+
+.patrocinio{display:flex; padding-left: 1%;}
+.patrocinio img{flex: 1; width: 100%}
+
+
+
+/******** NO ESCRIBIR DE AQUI PARA BAJO SALVO PARA RESOLUCIONES MENORES DE 992px ***************************/
+@media only screen and (max-width: 992px) {
+	.content2 {
+		display:flex;
+		flex-direction:column;
+	}
+	.content {
+		width: 100%;
+	}
+	.bloque-izq {
+		flex: 1;
+	}
+	.bloque-izq, .bloque-dcho {
+		width: 100%;
+		margin: auto;
+		text-align: center;
+	}
+}
