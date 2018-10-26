@@ -12,10 +12,11 @@
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"/>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-		<link rel="stylesheet" type="text/css" href="CSS/CssRuth.css">
+		<link rel="stylesheet" type="text/css" href="../CSS/CssRuth.css">
 
 		<link rel=icon href="imagenes/Logo_arriba.png">
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/AnnouncementAdmin.js"></script>
 	</head>
 
 	<body>
@@ -25,7 +26,7 @@
 		<nav class="navbar navbar-expand-md navbar-dark barraNavegacion">
 			<!-- Este div es para la parte de la barra de navegación alineada a la izquierda -->
 			<div class="navbar-header">
-				<a href="admin2.html"><img class="logo" src="imagenes/logo.png"> </a>
+				<a href="../admin2.html"><img class="logo" src="../imagenes/logo.png"> </a>
 			</div>
 
 			<!-- Este div es para la parte de la barra de navegación alineada a la derecha -->
@@ -81,10 +82,10 @@
 			<!-- ************************ Menú izquierdo ************************-->
 			<div class="col-2 menuIzquierdo" id="menuIzquierdo"> 
 				<ul>
-					<li><a href="usuarios.html" class="hrefMenuIz"><button type="button"><i class="fas fa-users"></i> Usuarios
+					<li><a href="../usuarios.html" class="hrefMenuIz"><button type="button"><i class="fas fa-users"></i> Usuarios
 						</button></a></li>
 					<li><button type="button"><i class="fas fa-calendar"></i> Eventos</button></li>
-					<li><a href="announcement/announcementadmin.html" class="hrefMenuIz"><button type="button"><i class="fas fa-newspaper"></i> Noticias </button></a></li>
+					<li><a href="announcementadmin.html" class="hrefMenuIz"><button type="button"><i class="fas fa-newspaper"></i> Noticias </button></a></li>
 					<li><button type="button"><i class="fas fa-award "></i> Torneos</button></li>
 					<li><button type="button"><i class="fas fa-desktop "></i> Otro algo</button></li>
 					<li><button type="button"><i class="fas fa-chart-bar "></i> Otro algo</button></li>
@@ -95,37 +96,12 @@
 			<!-- ************************ Resto página ************************-->
 			<div class="col-9" >
 				<br>
-				<br>
-				<table id="users" class="tablaUsuarios">  
-					<thead>
-						<tr>
-							<th>Nick</th>
-							<th>Email</th>
-							<th>DNI</th>
-							<th>Nombre</th>
-							<th>Apellido 1</th>
-							<th>Apellido 2</th>
-							<th>Fecha de nacimiento</th>
-							<th>Rol</th>
-							<th>Fecha de registro</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr class="template_row">
-						</tr>
-					</tbody>
-				</table>
-
-
-
+				<div class="text-right">
+					<button type="button" class="btn btn-primary">Crear</button>
+				</div>
+				<table class="table" id=announcement-table></table>
 			</div>
-
-
 		</div>
-
-
-
-
 
 		<!-- Popper es para que funcione el js de la barra de navegación, que está hecha con bootstrap -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
@@ -134,61 +110,5 @@
 				integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 				crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-
-		<script type="text/javascript">
-
-			/*                            <th>Nick</th>
-                            <th>Email</th>
-                            <th>DNI</th>
-                            <th>Nombre</th>
-                            <th>Apellido 1</th>
-                            <th>Apellido 2</th>
-                            <th>Fecha de nacimiento</th>
-                            <th>Rol</th>
-                            <th>Fecha de registro</th>*/
-
-
-			$.ajax({
-				url: 'http://localhost/api/v1/users',
-				method: 'GET',
-				data: data,
-				success: function(data){
-					procesarDatos(data.data); //Funcion para meter los datos en las columnas
-
-				},
-				error: function(error){
-					console.error(error);
-				}
-			});
-
-
-
-			function procesarDatos(data){
-				var row=$("#users .row_template");
-
-				$.each(data, function(i, elem){
-					var content="<tr>";
-					content+="<td>"+elem.nick+"</td>";
-					content+="<td>"+elem.email+"</td>";
-					content+="<td>"+elem.dni+"</td>";
-					content+="<td>"+elem.name+"</td>";
-					content+="<td>"+elem.lastname_1+"</td>";
-					content+="<td>"+elem.lastname_2+"</td>";
-					content+="<td>"+elem.date_birth+"</td>";
-					content+="<td>"+elem.rol+"</td>";
-					content+="<td>"+elem.date_reg+"</td>";
-					content+="</tr>";
-
-					$("#users tbody").append(content);
-				});
-			}
-
-
-			var data=[{}]; //Por que no funciona si tengo esto?
-
-
-
-		</script>
-
 	</body>
 </html>

@@ -1,165 +1,165 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>FICONLAN Admin</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="description" content="Esta es la web oficial de la FicOnLan organizada por Freaksparty en A Coruña. Podrás estar al día de todas nuestras noticias y NO pulsar ctrl+F5 el día del registro ;)">
-        <meta name="keywords" content="LAN, party, lan party, galicia, Coruña, Coruna, FIC, Informatica, FIC OnLan">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <meta name="robots" content="noindex" />
+	<head>
+		<title>FICONLAN Admin</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Esta es la web oficial de la FicOnLan organizada por Freaksparty en A Coruña. Podrás estar al día de todas nuestras noticias y NO pulsar ctrl+F5 el día del registro ;)">
+		<meta name="keywords" content="LAN, party, lan party, galicia, Coruña, Coruna, FIC, Informatica, FIC OnLan">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="robots" content="noindex" />
 
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"/>
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-        
-        <link rel="stylesheet" type="text/css" href="CSS/CssRuth.css">
-        
-        <link rel=icon href="imagenes/Logo_arriba.png">
-        
-    </head>
-    
-    <body>
-        
-        <!-- ********************************************** Barra de navegación ********************************************** -->
-        
-        <nav class="navbar navbar-expand-md navbar-dark barraNavegacion">
-            <!-- Este div es para la parte de la barra de navegación alineada a la izquierda -->
-            <div class="navbar-header">
-                <a href="admin2.html"><img class="logo" src="imagenes/logo.png"> </a>
-            </div>
-            
-            <!-- Este div es para la parte de la barra de navegación alineada a la derecha -->
-            <ul class="navbar-nav ml-auto"> 
-                <!-- Este botón pilla todo lo que está dentro del div con id #menuIzquierdo y lo mete dentro para cuando cliques -->
-                <button type="button" class="navbar-toggle botonNavegacion" data-toggle="collapse" data-target="#menuIzquierdo">
-                     <i class="fas fa-plus"></i>                    
-                </button>
-                <!-- Este botón pilla todo lo que está dentro del div con id #myNavbar y lo mete dentro para cuando cliques -->
-                <button type="button" class="navbar-toggle botonNavegacion" data-toggle="collapse" data-target="#myNavbar">
-                     <i class="fas fa-bars"></i>                    
-                </button>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <li class="nav-item"> <!-- Parte de buscar -->
-                        <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
-                    </li>
-                    
-                    <li class="nav-item"> <!-- Botón de configuración -->
-                        <a class="nav-link" href="#"><i class="fas fa-cog"></i></a>
-                    </li>
-                    
-                    <li class="nav-item dropdown"> <!-- El botón del usuario activo -->
-                        <a class="nav-link " href="#" id="navbardrop" data-toggle="dropdown">
-                            <i class="fas fa-user"> </i>  
-                            Ruth Seoane 
-                            <i class="fas fa-caret-down"> </i>
-                             
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                            <!-- El menu del usuario activo -->
-                            <a class="dropdown-item" href="#"><i class="fas fa-user"> </i> Perfil</a>
-                            <a class="dropdown-item" href="#"><i class="fas fa-cog"> </i> Ajustes</a>
-                            <a class="dropdown-item" href="#"><i class="far fa-envelope"></i> Mensajes</a>
-                            <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Log out</a>
-                        </div>
-                    </li>
-                    <li class="nav-item"> <!-- Botón de poweroff que aun no se muy bien para que es -->
-                        <a class="nav-link" href="#"><i class="fas fa-power-off icono"></i></a>
-                    </li>
-                 
-                
-                </div>
-            </ul>
-        </nav>
-        
-        
-        
-        
-        
-        <!-- ********************************************** Resto de la pagina ********************************************** -->
-        
-        <div class="row">
-            <!-- ************************ Menú izquierdo ************************-->
-            <div class="col-2 menuIzquierdo" id="menuIzquierdo"> 
-                <ul>
-                    <li><a href="usuarios.html" class="hrefMenuIz"><button type="button"><i class="fas fa-users"></i> Usuarios
-                        </button></a></li>
-                    <li><button type="button"><i class="fas fa-calendar"></i> Eventos</button></li>
-                    <li><button type="button"><i class="fas fa-newspaper "></i> Noticias</button></li>
-                    <li><button type="button"><i class="fas fa-award "></i> Torneos</button></li>
-                    <li><button type="button"><i class="fas fa-desktop "></i> Otro algo</button></li>
-                    <li><button type="button"><i class="fas fa-chart-bar "></i> Otro algo</button></li>
-                    <li><button type="button"><i class="fab fa-angellist "></i> Otro algo</button></li>
-                </ul>
-            </div>
-            
-            <!-- ************************ Resto página ************************-->
-            <div class="col-9" >
-            
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec quam ut elit rutrum consequat vel nec magna. Vivamus ut ultricies lorem, ac sollicitudin sem. Suspendisse fringilla pharetra magna, id feugiat turpis varius in. Curabitur efficitur eros ex, vitae pulvinar lorem semper sit amet. Nulla porta a tellus eu blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in lacinia ante, sit amet vulputate risus. Sed malesuada eros ac sapien aliquam, nec tempor nibh tincidunt.
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"/>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-Sed sit amet ligula id leo tempus tristique. Nam scelerisque vitae tortor at venenatis. Sed id nunc a tortor interdum aliquam sed quis arcu. Maecenas suscipit justo ligula, eget interdum elit tincidunt nec. Ut ac dui a enim venenatis iaculis sed ut libero. Aenean pharetra non dui eget vestibulum. Aliquam nec erat ac massa pharetra faucibus eu a sapien. Fusce vel tellus at lorem congue mattis sit amet vel nisl.
+		<link rel="stylesheet" type="text/css" href="CSS/CssRuth.css">
 
-Morbi vestibulum nisl at arcu aliquet dapibus. Sed sed ipsum suscipit, tristique dui a, malesuada erat. Mauris interdum lacus at blandit vehicula. Quisque dui nulla, viverra id finibus in, pellentesque sit amet mi. Curabitur a leo metus. Cras quis est enim. Cras diam mi, viverra suscipit ultrices at, egestas ut sem.
+		<link rel=icon href="imagenes/Logo_arriba.png">
 
-In porta scelerisque ornare. Quisque nec ligula in massa pharetra vulputate vitae a eros. Curabitur maximus tincidunt maximus. Maecenas blandit orci neque, et imperdiet metus faucibus porttitor. Donec sit amet laoreet eros, vel gravida velit. Etiam facilisis pulvinar velit nec rutrum. Vestibulum et ante vitae sem pretium ultricies. Etiam euismod maximus nibh, a hendrerit enim. Vivamus a tortor non sem laoreet egestas eu id risus. Fusce pulvinar bibendum nulla non consectetur. Nunc tempus felis non leo tempor, ut molestie dui tempor.
+	</head>
 
-Duis eu massa mattis velit tincidunt congue sed in tortor. Sed sodales erat velit, ac cursus lectus feugiat in. Nam tincidunt libero condimentum porta tempus. Curabitur aliquet facilisis leo. Nunc euismod urna velit, sed convallis quam pellentesque accumsan. Suspendisse sollicitudin nulla vehicula ante bibendum finibus. Vivamus condimentum enim et dui vulputate varius. Nulla nulla magna, scelerisque in magna nec, aliquet consectetur lectus. Vestibulum varius ultricies congue. Fusce maximus ullamcorper vulputate. Vestibulum sed hendrerit risus, quis elementum elit. Etiam sed vulputate enim, ac auctor metus. In accumsan egestas sodales. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+	<body>
 
-Vivamus ullamcorper efficitur felis, vel ultrices erat hendrerit eget. Praesent aliquam nisi libero, nec eleifend tellus bibendum id. Nulla scelerisque sollicitudin suscipit. Vivamus mollis, mi sed egestas pharetra, diam nisl aliquam ligula, elementum ullamcorper lorem sapien eget eros. Phasellus auctor, quam eget pellentesque suscipit, quam velit pharetra nisi, quis venenatis nunc orci et quam. Aliquam facilisis odio sed enim malesuada, sit amet egestas orci ullamcorper. Curabitur quis nulla mauris. Aliquam ut velit erat. Nullam non nunc a nulla hendrerit hendrerit. Etiam facilisis non purus eget pulvinar. Sed et magna vitae lacus accumsan commodo ac nec massa.
+		<!-- ********************************************** Barra de navegación ********************************************** -->
 
-Nunc condimentum imperdiet nunc, vel tempus tortor vulputate nec. Praesent dapibus at felis vitae tempor. Pellentesque luctus sit amet sapien nec fringilla. Suspendisse dictum cursus dui, vel varius ipsum pretium quis. Duis congue et dui a sagittis. Maecenas in nisl aliquam, auctor enim at, mollis sem. Nulla porta, purus ac mollis cursus, mi est semper urna, quis fringilla mi elit a arcu. Maecenas ultrices condimentum tortor. Ut cursus, dolor eu dignissim gravida, massa quam dapibus leo, vel vehicula est dui vitae justo.
+		<nav class="navbar navbar-expand-md navbar-dark barraNavegacion">
+			<!-- Este div es para la parte de la barra de navegación alineada a la izquierda -->
+			<div class="navbar-header">
+				<a href="admin2.html"><img class="logo" src="imagenes/logo.png"> </a>
+			</div>
 
-Sed hendrerit hendrerit sem a accumsan. Phasellus vel mauris at nibh molestie pulvinar. Nulla id congue lectus. Donec quis nunc nec arcu tempor aliquet. Quisque leo urna, iaculis sed purus quis, condimentum iaculis nibh. Vivamus scelerisque luctus eros, quis condimentum sapien rhoncus in. Cras non purus laoreet, tristique turpis porttitor, molestie sapien. Ut ac massa non velit feugiat ultricies. Praesent cursus, lorem eu sollicitudin feugiat, diam ligula interdum sem, vel finibus justo eros vel enim. Nam ac massa malesuada mauris interdum eleifend hendrerit id urna. Vestibulum ligula tortor, semper ut erat vel, pulvinar faucibus nunc. Quisque purus nisl, consequat in leo non, imperdiet efficitur purus. Vestibulum arcu magna, accumsan at risus a, hendrerit consequat erat. Curabitur ac luctus nisl. Proin ullamcorper metus quis arcu eleifend, iaculis tempus tortor ornare. Ut auctor finibus risus.
+			<!-- Este div es para la parte de la barra de navegación alineada a la derecha -->
+			<ul class="navbar-nav ml-auto"> 
+				<!-- Este botón pilla todo lo que está dentro del div con id #menuIzquierdo y lo mete dentro para cuando cliques -->
+				<button type="button" class="navbar-toggle botonNavegacion" data-toggle="collapse" data-target="#menuIzquierdo">
+					<i class="fas fa-plus"></i>                    
+				</button>
+				<!-- Este botón pilla todo lo que está dentro del div con id #myNavbar y lo mete dentro para cuando cliques -->
+				<button type="button" class="navbar-toggle botonNavegacion" data-toggle="collapse" data-target="#myNavbar">
+					<i class="fas fa-bars"></i>                    
+				</button>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<li class="nav-item"> <!-- Parte de buscar -->
+						<a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+					</li>
 
-Fusce quis urna felis. Mauris neque elit, dapibus ac ornare id, auctor in velit. Sed ac elit sodales, euismod sem id, molestie lorem. Nunc vel sapien eu dolor interdum accumsan ut et turpis. Ut fringilla nisl eu erat dapibus lobortis. Fusce posuere lectus in arcu euismod tristique. Integer at viverra magna, non venenatis metus. Donec imperdiet justo est, at tincidunt ante dictum sed. Vivamus hendrerit feugiat lacus, eget hendrerit velit hendrerit sed.
+					<li class="nav-item"> <!-- Botón de configuración -->
+						<a class="nav-link" href="#"><i class="fas fa-cog"></i></a>
+					</li>
 
-Mauris urna erat, aliquet sit amet tincidunt quis, condimentum vitae ligula. Cras faucibus ut enim in facilisis. Curabitur eu dolor at leo interdum aliquam. In egestas magna eros, eget venenatis nibh laoreet ut. Proin orci purus, euismod id dolor ut, laoreet faucibus eros. Donec condimentum lectus a elit ornare cursus. Ut cursus nibh ut tellus porttitor rhoncus. Nulla iaculis condimentum mi, porttitor blandit odio tempus a. Nunc porttitor nulla lacus, a fringilla ante consequat a. Nam varius, odio quis commodo semper, nisl enim euismod lacus, et euismod justo sapien eget lorem. Phasellus quis lacinia turpis. Etiam scelerisque pulvinar justo. Donec ultrices molestie turpis in vulputate. Cras condimentum ut quam vitae ornare. Praesent dictum libero accumsan ullamcorper imperdiet.
+					<li class="nav-item dropdown"> <!-- El botón del usuario activo -->
+						<a class="nav-link " href="#" id="navbardrop" data-toggle="dropdown">
+							<i class="fas fa-user"> </i>  
+							Ruth Seoane 
+							<i class="fas fa-caret-down"> </i>
 
-Ut posuere massa non hendrerit dignissim. Cras vel pretium eros. Nulla malesuada pretium vestibulum. Duis mi metus, ultricies sit amet magna eu, laoreet consectetur urna. Nam vel mi sed ligula ultricies porta ac nec mauris. Fusce rhoncus mattis pellentesque. Sed a tempor justo. Donec dignissim, nunc ut luctus rhoncus, erat libero molestie dui, at pulvinar massa mi eget tortor. Morbi pulvinar felis non augue laoreet fringilla. Donec non pretium enim, eu tristique diam. Duis ut dui sit amet nisl sollicitudin rutrum vel vel dui. Praesent fringilla elementum tellus eu imperdiet. Maecenas egestas ante sed dictum tempus. Ut egestas mauris sit amet sapien aliquet, et dictum arcu porttitor. Donec convallis ligula metus, lacinia auctor sapien lobortis a. Vestibulum eu sapien quis justo pulvinar mattis.
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+							<!-- El menu del usuario activo -->
+							<a class="dropdown-item" href="#"><i class="fas fa-user"> </i> Perfil</a>
+							<a class="dropdown-item" href="#"><i class="fas fa-cog"> </i> Ajustes</a>
+							<a class="dropdown-item" href="#"><i class="far fa-envelope"></i> Mensajes</a>
+							<a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Log out</a>
+						</div>
+					</li>
+					<li class="nav-item"> <!-- Botón de poweroff que aun no se muy bien para que es -->
+						<a class="nav-link" href="#"><i class="fas fa-power-off icono"></i></a>
+					</li>
 
-Phasellus facilisis porttitor purus eu egestas. Duis finibus mi sit amet lacus volutpat, at porttitor augue condimentum. Phasellus et mauris eu sapien sagittis rutrum a id augue. Sed vel vehicula sapien. Nam blandit quam sit amet dictum semper. Fusce pretium vulputate justo, eu ornare lorem iaculis at. Aenean mollis leo fermentum felis egestas, non interdum ex fermentum. Maecenas nulla magna, varius ac faucibus vel, venenatis at purus. Sed eget nisi sed purus rhoncus lacinia vel quis orci. Fusce ut diam turpis.
 
-Aenean pellentesque, augue sed eleifend tempus, mauris felis fermentum turpis, eu suscipit lorem arcu non enim. Phasellus ullamcorper finibus lacus eget tincidunt. Maecenas ut massa massa. In vehicula, eros eu egestas vulputate, arcu lorem pretium turpis, ac suscipit mi libero ut sapien. Proin lacinia neque ornare, molestie elit vitae, euismod dolor. Praesent sodales congue turpis rhoncus placerat. Nam ante felis, molestie eget auctor ut, convallis pretium augue. Sed pulvinar vestibulum mi nec semper. Donec viverra ullamcorper urna, vitae tristique turpis luctus non. Vivamus porta molestie fermentum. Aenean pellentesque auctor erat, sit amet accumsan lacus pellentesque eget. Etiam laoreet porttitor metus, sed feugiat purus rutrum vel. Vestibulum tempor eros et nisi fermentum, laoreet maximus turpis viverra. Quisque nec neque ac lorem accumsan iaculis nec a ligula.
+				</div>
+			</ul>
+		</nav>
 
-Donec pellentesque enim lacus, sed tristique tortor aliquam ut. Cras eget consequat dui. Vestibulum consequat ut nisi at aliquam. Aliquam erat volutpat. Sed hendrerit enim vel magna suscipit sollicitudin. Integer mollis risus vel magna scelerisque, et convallis lacus tristique. Donec accumsan, lacus id lobortis viverra, lorem massa interdum magna, sed aliquam quam risus vel ante. Integer eget velit quis diam iaculis convallis sed fringilla elit. Mauris eget ullamcorper orci. Curabitur venenatis sodales orci at aliquet. Donec sodales feugiat justo, nec fringilla quam bibendum non. Nunc placerat enim ac arcu eleifend vulputate. Cras luctus tincidunt justo, sed pharetra neque tristique et. Etiam vel rhoncus libero, eu porttitor sapien. Nam feugiat lobortis condimentum. Maecenas vel tortor ut nulla eleifend luctus at sit amet urna.
 
-Duis elit quam, elementum a est ut, luctus bibendum magna. Integer vulputate ipsum eget enim ultrices molestie. Fusce sit amet ligula ac nisi tempus condimentum. Duis varius vehicula erat a posuere. Vivamus vel urna nec lectus molestie dictum quis non nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut varius gravida turpis at accumsan. 
-            
-            
-            
-            </div>
-        
-        <!-- $.ajax({
-    url: url,
-    method: method,
-    data: data,
-    success: function(data){
-        console.log(data);
-    },
-    error: function(error){
-        console.error(error);
-    }
+
+
+
+		<!-- ********************************************** Resto de la pagina ********************************************** -->
+
+		<div class="row">
+			<!-- ************************ Menú izquierdo ************************-->
+			<div class="col-2 menuIzquierdo" id="menuIzquierdo"> 
+				<ul>
+					<li><a href="usuarios.html" class="hrefMenuIz"><button type="button"><i class="fas fa-users"></i> Usuarios
+						</button></a></li>
+					<li><button type="button"><i class="fas fa-calendar"></i> Eventos</button></li>
+					<li><a href="announcement/announcementadmin.html" class="hrefMenuIz"><button type="button"><i class="fas fa-newspaper"></i> Noticias </button></a></li>
+					<li><button type="button"><i class="fas fa-award "></i> Torneos</button></li>
+					<li><button type="button"><i class="fas fa-desktop "></i> Otro algo</button></li>
+					<li><button type="button"><i class="fas fa-chart-bar "></i> Otro algo</button></li>
+					<li><button type="button"><i class="fab fa-angellist "></i> Otro algo</button></li>
+				</ul>
+			</div>
+
+			<!-- ************************ Resto página ************************-->
+			<div class="col-9" >
+
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec quam ut elit rutrum consequat vel nec magna. Vivamus ut ultricies lorem, ac sollicitudin sem. Suspendisse fringilla pharetra magna, id feugiat turpis varius in. Curabitur efficitur eros ex, vitae pulvinar lorem semper sit amet. Nulla porta a tellus eu blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in lacinia ante, sit amet vulputate risus. Sed malesuada eros ac sapien aliquam, nec tempor nibh tincidunt.
+
+				Sed sit amet ligula id leo tempus tristique. Nam scelerisque vitae tortor at venenatis. Sed id nunc a tortor interdum aliquam sed quis arcu. Maecenas suscipit justo ligula, eget interdum elit tincidunt nec. Ut ac dui a enim venenatis iaculis sed ut libero. Aenean pharetra non dui eget vestibulum. Aliquam nec erat ac massa pharetra faucibus eu a sapien. Fusce vel tellus at lorem congue mattis sit amet vel nisl.
+
+				Morbi vestibulum nisl at arcu aliquet dapibus. Sed sed ipsum suscipit, tristique dui a, malesuada erat. Mauris interdum lacus at blandit vehicula. Quisque dui nulla, viverra id finibus in, pellentesque sit amet mi. Curabitur a leo metus. Cras quis est enim. Cras diam mi, viverra suscipit ultrices at, egestas ut sem.
+
+				In porta scelerisque ornare. Quisque nec ligula in massa pharetra vulputate vitae a eros. Curabitur maximus tincidunt maximus. Maecenas blandit orci neque, et imperdiet metus faucibus porttitor. Donec sit amet laoreet eros, vel gravida velit. Etiam facilisis pulvinar velit nec rutrum. Vestibulum et ante vitae sem pretium ultricies. Etiam euismod maximus nibh, a hendrerit enim. Vivamus a tortor non sem laoreet egestas eu id risus. Fusce pulvinar bibendum nulla non consectetur. Nunc tempus felis non leo tempor, ut molestie dui tempor.
+
+				Duis eu massa mattis velit tincidunt congue sed in tortor. Sed sodales erat velit, ac cursus lectus feugiat in. Nam tincidunt libero condimentum porta tempus. Curabitur aliquet facilisis leo. Nunc euismod urna velit, sed convallis quam pellentesque accumsan. Suspendisse sollicitudin nulla vehicula ante bibendum finibus. Vivamus condimentum enim et dui vulputate varius. Nulla nulla magna, scelerisque in magna nec, aliquet consectetur lectus. Vestibulum varius ultricies congue. Fusce maximus ullamcorper vulputate. Vestibulum sed hendrerit risus, quis elementum elit. Etiam sed vulputate enim, ac auctor metus. In accumsan egestas sodales. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+				Vivamus ullamcorper efficitur felis, vel ultrices erat hendrerit eget. Praesent aliquam nisi libero, nec eleifend tellus bibendum id. Nulla scelerisque sollicitudin suscipit. Vivamus mollis, mi sed egestas pharetra, diam nisl aliquam ligula, elementum ullamcorper lorem sapien eget eros. Phasellus auctor, quam eget pellentesque suscipit, quam velit pharetra nisi, quis venenatis nunc orci et quam. Aliquam facilisis odio sed enim malesuada, sit amet egestas orci ullamcorper. Curabitur quis nulla mauris. Aliquam ut velit erat. Nullam non nunc a nulla hendrerit hendrerit. Etiam facilisis non purus eget pulvinar. Sed et magna vitae lacus accumsan commodo ac nec massa.
+
+				Nunc condimentum imperdiet nunc, vel tempus tortor vulputate nec. Praesent dapibus at felis vitae tempor. Pellentesque luctus sit amet sapien nec fringilla. Suspendisse dictum cursus dui, vel varius ipsum pretium quis. Duis congue et dui a sagittis. Maecenas in nisl aliquam, auctor enim at, mollis sem. Nulla porta, purus ac mollis cursus, mi est semper urna, quis fringilla mi elit a arcu. Maecenas ultrices condimentum tortor. Ut cursus, dolor eu dignissim gravida, massa quam dapibus leo, vel vehicula est dui vitae justo.
+
+				Sed hendrerit hendrerit sem a accumsan. Phasellus vel mauris at nibh molestie pulvinar. Nulla id congue lectus. Donec quis nunc nec arcu tempor aliquet. Quisque leo urna, iaculis sed purus quis, condimentum iaculis nibh. Vivamus scelerisque luctus eros, quis condimentum sapien rhoncus in. Cras non purus laoreet, tristique turpis porttitor, molestie sapien. Ut ac massa non velit feugiat ultricies. Praesent cursus, lorem eu sollicitudin feugiat, diam ligula interdum sem, vel finibus justo eros vel enim. Nam ac massa malesuada mauris interdum eleifend hendrerit id urna. Vestibulum ligula tortor, semper ut erat vel, pulvinar faucibus nunc. Quisque purus nisl, consequat in leo non, imperdiet efficitur purus. Vestibulum arcu magna, accumsan at risus a, hendrerit consequat erat. Curabitur ac luctus nisl. Proin ullamcorper metus quis arcu eleifend, iaculis tempus tortor ornare. Ut auctor finibus risus.
+
+				Fusce quis urna felis. Mauris neque elit, dapibus ac ornare id, auctor in velit. Sed ac elit sodales, euismod sem id, molestie lorem. Nunc vel sapien eu dolor interdum accumsan ut et turpis. Ut fringilla nisl eu erat dapibus lobortis. Fusce posuere lectus in arcu euismod tristique. Integer at viverra magna, non venenatis metus. Donec imperdiet justo est, at tincidunt ante dictum sed. Vivamus hendrerit feugiat lacus, eget hendrerit velit hendrerit sed.
+
+				Mauris urna erat, aliquet sit amet tincidunt quis, condimentum vitae ligula. Cras faucibus ut enim in facilisis. Curabitur eu dolor at leo interdum aliquam. In egestas magna eros, eget venenatis nibh laoreet ut. Proin orci purus, euismod id dolor ut, laoreet faucibus eros. Donec condimentum lectus a elit ornare cursus. Ut cursus nibh ut tellus porttitor rhoncus. Nulla iaculis condimentum mi, porttitor blandit odio tempus a. Nunc porttitor nulla lacus, a fringilla ante consequat a. Nam varius, odio quis commodo semper, nisl enim euismod lacus, et euismod justo sapien eget lorem. Phasellus quis lacinia turpis. Etiam scelerisque pulvinar justo. Donec ultrices molestie turpis in vulputate. Cras condimentum ut quam vitae ornare. Praesent dictum libero accumsan ullamcorper imperdiet.
+
+				Ut posuere massa non hendrerit dignissim. Cras vel pretium eros. Nulla malesuada pretium vestibulum. Duis mi metus, ultricies sit amet magna eu, laoreet consectetur urna. Nam vel mi sed ligula ultricies porta ac nec mauris. Fusce rhoncus mattis pellentesque. Sed a tempor justo. Donec dignissim, nunc ut luctus rhoncus, erat libero molestie dui, at pulvinar massa mi eget tortor. Morbi pulvinar felis non augue laoreet fringilla. Donec non pretium enim, eu tristique diam. Duis ut dui sit amet nisl sollicitudin rutrum vel vel dui. Praesent fringilla elementum tellus eu imperdiet. Maecenas egestas ante sed dictum tempus. Ut egestas mauris sit amet sapien aliquet, et dictum arcu porttitor. Donec convallis ligula metus, lacinia auctor sapien lobortis a. Vestibulum eu sapien quis justo pulvinar mattis.
+
+				Phasellus facilisis porttitor purus eu egestas. Duis finibus mi sit amet lacus volutpat, at porttitor augue condimentum. Phasellus et mauris eu sapien sagittis rutrum a id augue. Sed vel vehicula sapien. Nam blandit quam sit amet dictum semper. Fusce pretium vulputate justo, eu ornare lorem iaculis at. Aenean mollis leo fermentum felis egestas, non interdum ex fermentum. Maecenas nulla magna, varius ac faucibus vel, venenatis at purus. Sed eget nisi sed purus rhoncus lacinia vel quis orci. Fusce ut diam turpis.
+
+				Aenean pellentesque, augue sed eleifend tempus, mauris felis fermentum turpis, eu suscipit lorem arcu non enim. Phasellus ullamcorper finibus lacus eget tincidunt. Maecenas ut massa massa. In vehicula, eros eu egestas vulputate, arcu lorem pretium turpis, ac suscipit mi libero ut sapien. Proin lacinia neque ornare, molestie elit vitae, euismod dolor. Praesent sodales congue turpis rhoncus placerat. Nam ante felis, molestie eget auctor ut, convallis pretium augue. Sed pulvinar vestibulum mi nec semper. Donec viverra ullamcorper urna, vitae tristique turpis luctus non. Vivamus porta molestie fermentum. Aenean pellentesque auctor erat, sit amet accumsan lacus pellentesque eget. Etiam laoreet porttitor metus, sed feugiat purus rutrum vel. Vestibulum tempor eros et nisi fermentum, laoreet maximus turpis viverra. Quisque nec neque ac lorem accumsan iaculis nec a ligula.
+
+				Donec pellentesque enim lacus, sed tristique tortor aliquam ut. Cras eget consequat dui. Vestibulum consequat ut nisi at aliquam. Aliquam erat volutpat. Sed hendrerit enim vel magna suscipit sollicitudin. Integer mollis risus vel magna scelerisque, et convallis lacus tristique. Donec accumsan, lacus id lobortis viverra, lorem massa interdum magna, sed aliquam quam risus vel ante. Integer eget velit quis diam iaculis convallis sed fringilla elit. Mauris eget ullamcorper orci. Curabitur venenatis sodales orci at aliquet. Donec sodales feugiat justo, nec fringilla quam bibendum non. Nunc placerat enim ac arcu eleifend vulputate. Cras luctus tincidunt justo, sed pharetra neque tristique et. Etiam vel rhoncus libero, eu porttitor sapien. Nam feugiat lobortis condimentum. Maecenas vel tortor ut nulla eleifend luctus at sit amet urna.
+
+				Duis elit quam, elementum a est ut, luctus bibendum magna. Integer vulputate ipsum eget enim ultrices molestie. Fusce sit amet ligula ac nisi tempus condimentum. Duis varius vehicula erat a posuere. Vivamus vel urna nec lectus molestie dictum quis non nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut varius gravida turpis at accumsan. 
+
+
+
+			</div>
+
+			<!-- $.ajax({
+url: url,
+method: method,
+data: data,
+success: function(data){
+console.log(data);
+},
+error: function(error){
+console.error(error);
+}
 }); -->
-     
-        <!-- /api/v1/users
- method: GET -> Devuelve la lista de usuarios
- method: POST -> Inserta los datos del usuario enviado
+
+			<!-- /api/v1/users
+method: GET -> Devuelve la lista de usuarios
+method: POST -> Inserta los datos del usuario enviado
 /api/v1/users/"dni"
- method: GET -> Devuelve el usuario con dni = "dni"
+method: GET -> Devuelve el usuario con dni = "dni"
 /api/v1/users/login
- method: POST -> Devuelve true si el nick y la contraseña son correctos -->    
-        <!-- <table id="users">
-    <thead>
-        <tr>
-            <th>Nombre</th>
-            <th>Apellido 1</th>
-            <th>Apellido 2</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="template_row">
-        </tr>
-    </tbody>
+method: POST -> Devuelve true si el nick y la contraseña son correctos -->    
+			<!-- <table id="users">
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Apellido 1</th>
+<th>Apellido 2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="template_row">
+</tr>
+</tbody>
 </table>
 
 <script
@@ -168,38 +168,38 @@ integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 crossorigin="anonymous"></script>
 
 <script type="text/javascript">
-    var data=[{
-        "name": "Pablo",
-        "ape1": "Hermida",
-        "ape2": "Mourelle"},
-    {
-        "name": "Ruth",
-        "ape1": "Seoane",
-        "ape2": "Loureda"},
-    ];
+var data=[{
+"name": "Pablo",
+"ape1": "Hermida",
+"ape2": "Mourelle"},
+{
+"name": "Ruth",
+"ape1": "Seoane",
+"ape2": "Loureda"},
+];
 
-    var row=$("#users .row_template");
+var row=$("#users .row_template");
 
-    $.each(data, function(i, elem){
-        var content="<tr>";
-        content+="<td>"+elem.name+"</td>";
-        content+="<td>"+elem.ape1+"</td>";
-        content+="<td>"+elem.ape2+"</td>";
-        content+="</tr>";
+$.each(data, function(i, elem){
+var content="<tr>";
+content+="<td>"+elem.name+"</td>";
+content+="<td>"+elem.ape1+"</td>";
+content+="<td>"+elem.ape2+"</td>";
+content+="</tr>";
 
-        $("#users tbody").append(content);
-    });
+$("#users tbody").append(content);
+});
 </script> -->    
-            
-        </div>
-        
-        
-        <!-- Popper es para que funcione el js de la barra de navegación, que está hecha con bootstrap -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-        <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    </body>
+
+		</div>
+
+
+		<!-- Popper es para que funcione el js de la barra de navegación, que está hecha con bootstrap -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script
+				src="https://code.jquery.com/jquery-3.3.1.min.js"
+				integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+				crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	</body>
 </html>
