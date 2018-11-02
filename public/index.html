@@ -18,6 +18,7 @@
 			<div class="logo-content">
 			<img src="./img/logo.png" alt='Fic OnLan logo' class='logo'>
 		</div>
+
 		<!------------------ NAV BAR ------------------>
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle avigation">
@@ -40,16 +41,27 @@
 					<li class="nav-item">
 						<a class="nav-link nav-button" href="torneos.html">Torneos</a>
 					</li>
+					<!-- Boton cambiante -->
 					<li class="nav-item" id="nav-inscribirse">
-						<a class="nav-link" href="#">Inscribirse</a>
+						<a class="nav-link nav-button boton-verde boton-cambiante" href="#">Inscribirse</a>
 					</li>
+					<li class="nav-item" id="nav-loguearse">
+						<a class="nav-link nav-button boton-negro boton-cambiante" href="#">Loguearse</a>
+					</li>
+					<li class="nav-item" id="nav-plazo-cerrado">
+						<span class="text boton-gris boton-cambiante" href="#">Pechado</span>
+					</li>
+					<li class="nav-item" id="nav-inscrito">
+						<span class="text boton-verde boton-cambiante" id="posEnCola" href="#">Posicion</span>
+					</li>
+					<!-- fin de Boton cambiante-->
 				</ul>
 			</div>
 		</nav>
 				<div class="bloque-izq">
 					<!--SLIDER IMAGENES-->
           <div id="carouselSlides" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
+          	<div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="img/torneo.jpg" alt="First slide">
               </div>
@@ -158,5 +170,38 @@
 			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 			crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script>
+			$(function(){
+				$.getJSON("userData.json", function(data){
+					console.log(data);
+					if(Object.keys(data).length == 0){
+						//se muestra boton de login
+						$("#nav-inscribirse").remove();
+						$("#nav-plazo-cerrado").remove();
+						$("#nav-inscrito").remove();
+					}else{
+						if(data.plazo_abierto){
+							if(data.esta_inscrito){
+								//se muestra posicion en la cola
+								$("#posEnCola").html("Posición en la cola: " + data.posicion_cola_inscritos);
+								$("#nav-inscribirse").remove();
+								$("#nav-plazo-cerrado").remove();
+								$("#nav-loguearse").remove();
+							}else{
+								//se muestra "Inscribirse"
+								$("#nav-plazo-cerrado").remove();
+								$("#nav-loguearse").remove();
+								$("#nav-inscrito").remove();
+							}
+						}else{
+							//"se muestra "Plazo cerrado"
+							$("#nav-inscribirse").remove();
+							$("#nav-loguearse").remove();
+							$("#nav-inscrito").remove();
+						}
+					}
+				});
+			});
+		</script>
 	</body>
 </html>

@@ -47,20 +47,11 @@ body{
 .nav-current-button {
 	background-color: #98ea3e;
 }
-#nav-inscribirse {
-	float: right;
-	background-color: black;
-	color: white;
-	margin-left: auto;
-	margin-right: 0;
-	border-radius: 105px;
-}
+
 .nav-button:hover {
 	background-color: rgba(0,0,0,0.2);
 }
-#nav-inscribirse a:hover{
-	background-color: rgba(255,255,255,0.3);
-}
+
 a{
 	text-decoration: none;
 }
@@ -68,6 +59,7 @@ a:active{
 	color: inherit !important;
 	text-decoration: inherit !important;
 }
+
 .icos-redes{
 	
 	width: 40px;
@@ -94,8 +86,33 @@ a:active{
 
 .patrocinio{display:flex; padding-left: 1%;}
 .patrocinio img{flex: 1; width: 100%}
+/******** CSS DE BRAN **************************************************************************************/
+.boton-cambiante{
+	border-radius: 5px;
+	float: right;
+    position: absolute;
+    right: 0;
+    padding: 5px 30px;
+}
 
+#nav-inscribirse,
+#nav-loguearse,
+#nav-plazo-cerrado,
+#nav-inscrito{
+	float:right;
+}
 
+.boton-verde{
+	background: #98ea3e;
+}
+
+.boton-negro{
+	background: 000000;
+}
+
+.boton-gris{
+	background: #c9c9c9;
+}
 
 /******** NO ESCRIBIR DE AQUI PARA BAJO SALVO PARA RESOLUCIONES MENORES DE 992px ***************************/
 @media only screen and (max-width: 992px) {
