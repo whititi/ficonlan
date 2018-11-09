@@ -27,19 +27,19 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto" id="navbar-main">
 					<li class="nav-item nav-active">
-						<a class="nav-link nav-current-button" href="index.html">Home</a>
+						<a class="nav-link nav-current-button" href="index.html">INICIO</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link nav-button" href="#">Boton</a>
+						<a class="nav-link nav-button" href="noticias.html">NOTICIAS</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link nav-button" href="#">Boton</a>
+						<a class="nav-link nav-button" href="torneos.html">TORNEOS</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link nav-button" href="#">Boton</a>
+						<a class="nav-link nav-button" href="#">SOBRE NOSOTROS</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link nav-button" href="torneos.html">Torneos</a>
+						<a class="nav-link nav-button" href="#">FORO</a>
 					</li>
 					<!-- Boton cambiante -->
 					<li class="nav-item" id="nav-inscribirse">
@@ -65,10 +65,10 @@
       <div id="carouselSlides" class="carousel slide" data-ride="carousel">
        	<div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="img/torneo.jpg" alt="First slide">
+            <img class="d-block w-100 maxheight" src="img/torneo.jpg" alt="First slide">
           </div>
             <div class="carousel-item">
-              <img class="d-block w-100" style="height: 414px" src="img/minijuego.jpg" alt="Second slide">
+              <img class="d-block w-100 maxheight" src="img/minijuego.jpg" alt="Second slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselSlides" role="button" data-slide="prev">
@@ -88,8 +88,9 @@
 				<a class='links-redes' href='https://www.instagram.com/ficonlan/?hl=es' target="_blank"><img class='icos-redes' src='img/instagram.png' alt='instagram fic onlan'></a>
 				<a class='links-redes' href='https://www.facebook.com/FicOnLan/' target="_blank"><img class='icos-redes' src='img/facebook.png' alt='facebok fic onlan'></a>
 				<a class='links-redes' href='https://twitter.com/Fic_OnLan' target="_blank"><img class='icos-redes' src='img/twitter.png' alt='twitter fic onlan'></a>
-				<a class='links-redes' href='https://www.youtube.com/channel/UCFargYlxhH0iCNB5UWCqlcQ' target="_blank"><img class='icos-redes' src='img/youtube2.png' alt='Youtube fic onlan'></a>
+				<a class='links-redes' href='https://www.youtube.com/channel/UCFargYlxhH0iCNB5UWCqlcQ' target="_blank"><img class='icos-redes' src='img/youtube.png' alt='Youtube fic onlan'></a>
 			</div>
+    <!--**** TABLA FICOPUNTOS ***-->
 			<table class="table table-responsive">
 				<thead class="thead-green">
 					<tr class="thead-green">
@@ -156,15 +157,25 @@
     <!--***FIN BLOQUE DERECHO**-->
 
 
-<!-- ******************* CAROUSEL MULTI ITEM PATRONCINIOS ***************** -->
-		<div class="row patrocinio">
-			<div class="col-3 d-flex flex-wrap align-items-center"><img src="img/udc.png" alt="PatrocinadorUdc"></div>
-			<div class="col-3 d-flex flex-wrap align-items-center">
-				<img src="img/gadis.png" alt="PatrocinadorGadis">
-			</div>
-			<div class="col-3 d-flex flex-wrap align-items-center"></div>
-		  <div class="col-3 d-flex flex-wrap align-items-center"></div>
-		</div>
+<!-- ******************* CAROUSEL  PATRONCINIOS ***************** -->
+		<div id="carouselPatrocinios" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="slide">
+            <img class="d-block w-100 imgpatrocinio" src="img/gadis1.png" alt="First slide">
+          </div>
+            <div class="carousel-item" id="slide">
+              <img class="d-block w-100 imgpatrocinio" src="img/udc.png" alt="Second slide">
+            </div>
+            <div class="carousel-item" id="slide">
+              <img class="d-block w-100 imgpatrocinio" src="img/gadis1.png" alt="First slide">
+            </div>
+            <div class="carousel-item" id="slide">
+              <img class="d-block w-100 imgpatrocinio" src="img/udc.png" alt="Second slide">
+            </div>
+        </div>
+    
+    </div>
+
 <!--***************   FOOTER    ****************************-->
 		<div class="footer-copyright footerPpal row" id="footer">
 			<div class="col-4">© FREAK'S PARTY</div>
@@ -211,5 +222,32 @@
 				});
 			});
 		</script>
+  
+    <script>
+      var crt=1;
+      $(function(){
+        setTimeout(function(){
+          changeSlide();
+        }, 100);
+      });
+
+      function changeSlide(){
+        var slides=$(".carouselPatrocinios .slide").length;
+        var origin=crt;
+
+        if(slides==crt){
+          crt=1;
+          $(".carouselPatrocinios .slide[num!="+origin+"]").css({left:"-100vw"});
+        }
+        else crt ++;
+
+        $(".carouselPatrocinios .slide[num="+origin+"]").animate({left:'100vw'},100);
+        $(".carouselPatrocinios .slide[num="+crt+"]").animate({left:0},100);
+          setTimeout(function(){
+            changeSlide();
+          },100);
+      }
+    </script>
+
 	</body>
 </html>
