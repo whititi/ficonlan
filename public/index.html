@@ -19,7 +19,7 @@
 			<img src="./img/logo.png" alt='Fic OnLan logo' class='logo'>
 		</div>
 
-		<!------------------ NAV BAR ------------------>
+		<!--************* NAV BAR *****************-->
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle avigation">
 				<span class="navbar-toggler-icon"></span>
@@ -36,12 +36,12 @@
 						<a class="nav-link nav-button" href="torneos.html">TORNEOS</a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link nav-button dropdown-toggle" id="about" href="#">SOBRE NOSOTROS</a>
-            <div class="dropdown-menu" aria-labelledby="about">
-              <a class="dropdown-item" href="">Contactanos</a>
-              <a class="dropdown-item" href="">Unete a nosotros</a> 
-           </div>
-					</li>
+            <a class="dropbtn">SOBRE NOSOTROS</a>
+            <div class="dropdown-content">
+              <a href="#">Contáctanos</a>
+              <a href="#">Únete a nosotros!</a>
+            </div>
+          </li>
 					<li class="nav-item">
 						<a class="nav-link nav-button" href="#">FORO</a>
 					</li>
@@ -65,7 +65,7 @@
 
 <!--************** BLOQUE IZQUIERDO**********************-->
 		<div class="bloque-izq">
-					<!--SLIDER IMAGENES-->
+		<!--********** SLIDER IMAGENES ***********-->
       <div id="carouselSlides" class="carousel slide" data-ride="carousel">
        	<div class="carousel-inner">
           <div class="carousel-item active">
@@ -83,6 +83,38 @@
           <span class="carousel-control-next-icon" atia-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
+      </div>
+
+  <!--*********** CONTENIDO NOTICIAS ***********-->
+      <div class="news" style="background-color: #CF8282">
+        <div class="row">
+          <div class="col-md-5" style="background-color:#F53B3B ">
+            <p>holi, buenos dias</p>
+            <p>estamos probando las col</p>
+            <p>buenas nochessssssssssssssssssssssssssssssss</p>
+            <p>un saudo</p>
+          </div>
+          <div class="offset-2 col-md-5" style="background-color: #D2AA37">
+            <p>holi, buenos dias</p>
+            <p>estamos probando las col</p>
+            <p>buenas nochessssssssssssssssssssssssssssssss</p>
+            <p>un saudo</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5" style="background-color:#F53B3B ">
+            <p>holi, buenos dias</p>
+            <p>estamos probando las col</p>
+            <p>buenas nochessssssssssssssssssssssssssssssss</p>
+            <p>un saudo</p>
+          </div>
+          <div class="offset-2 col-md-5" style="background-color: #D2AA37">
+            <p>holi, buenos dias</p>
+            <p>estamos probando las col</p>
+            <p>buenas nochessssssssssssssssssssssssssssssss</p>
+            <p>un saudo</p>
+          </div>
+        </div>
       </div>
 		</div>
 
@@ -171,10 +203,10 @@
               <img class="d-block w-100 imgpatrocinio" src="img/udc.png" alt="Second slide">
             </div>
             <div class="carousel-item" id="slide">
-              <img class="d-block w-100 imgpatrocinio" src="img/gadis1.png" alt="First slide">
+              <img class="d-block w-100 imgpatrocinio" src="img/pcbox.jpg" alt="First slide">
             </div>
             <div class="carousel-item" id="slide">
-              <img class="d-block w-100 imgpatrocinio" src="img/udc.png" alt="Second slide">
+              <img class="d-block w-100 imgpatrocinio" src="img/pccomponentes.jpg" alt="Second slide">
             </div>
         </div>
     
@@ -252,6 +284,15 @@
           },100);
       }
     </script>
-
+  <!--******* BOTON MENU **********-->
+    <script >
+     /* $('about a').on('click', function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      });*/
+      $(function () {
+        $('#about li:last-child a').tab('show')
+      })
+    </script>
 	</body>
 </html>
