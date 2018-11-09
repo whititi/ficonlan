@@ -1,3 +1,6 @@
+*{
+	font-family: "Open Sans";
+}
 body{ 
 	background-image: url('../img/fic.jpeg');
 	background-repeat: no-repeat;
@@ -40,7 +43,11 @@ body{
     color: rgba(0,0,0,.5);
 	padding: 5px 30px;
 }
-#navbar-main {
+#navbar-main-first-half {
+	margin:0 0 0 0 !important;
+	width: 100%;
+}
+#navbar-main-second-half {
 	margin:0 0 0 0 !important;
 	width: 100%;
 }
@@ -87,15 +94,16 @@ a:active{
 	 
 }
 
-
+.maxheight {max-height: 414px;}
+.imgpatrocinio {max-height: 144px;}
 
 /******** CSS DE BRAN **************************************************************************************/
 .boton-cambiante{
 	border-radius: 5px;
-	float: right;
+	/*float: right;
     position: absolute;
-    right: 0;
-    padding: 5px 30px;
+    right: 0;*/
+    padding:6px 30px;
 }
 
 #nav-inscribirse,
@@ -108,17 +116,51 @@ a:active{
 .boton-verde{
 	background: #98ea3e;
 }
-
-.boton-negro{
-	background: 000000;
+.navbar-light .navbar-nav .nav-link.boton-negro{
+	background: #000000;
+	color: #ffffff;
 }
+.navbar-light .navbar-nav .nav-link.boton-negro:hover{
+	background: #c9c9c9;
+	color: #333;
+}
+.nav-link.nav-button.boton-negro.boton-cambiante{
+	padding:2px 30px;
+}
+.nav-link.nav-button.boton-verde.boton-cambiante{
+	padding:2px 30px;
+}
+/*.boton-negro{
+	background: #000000;
+	color: #ffffff;
+}*/
 
 .boton-gris{
 	background: #c9c9c9;
 }
 
-.maxheight {max-height: 414px;}
-.imgpatrocinio {max-height: 144px;}
+#navbarSupportedContent1{
+	float:left;
+}
+#navbarSupportedContent2{
+
+	position: absolute;
+	text-align: right !important;
+	right: 0;
+	display:table;
+	top:12px;
+}
+
+#navbar-main-first-half{
+	line-height:30px;
+}
+#navbar-main-second-half{
+	text-align: right !important;
+	line-height:30px;
+}
+.fa.fa-user-circle{
+		font-size:33px;
+}
 
 /******** NO ESCRIBIR DE AQUI PARA BAJO SALVO PARA RESOLUCIONES MENORES DE 992px ***************************/
 @media only screen and (max-width: 992px) {

@@ -24,39 +24,47 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle avigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto" id="navbar-main">
-					<li class="nav-item nav-active">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent1">
+					<ul class="navbar-nav mr-auto" id="navbar-main-first-half">
+						<li class="nav-item nav-active">
 						<a class="nav-link nav-current-button" href="index.html">INICIO</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link nav-button" href="noticias.html">NOTICIAS</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link nav-button" href="torneos.html">TORNEOS</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link nav-button" href="#">SOBRE NOSOTROS</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link nav-button" href="#">FORO</a>
-					</li>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-button" href="noticias.html">NOTICIAS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-button" href="torneos.html">TORNEOS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-button" href="#">SOBRE NOSOTROS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-button" href="#">FORO</a>
+						</li>
+					</ul>
+				</div>
 					<!-- Boton cambiante -->
-					<li class="nav-item" id="nav-inscribirse">
-						<a class="nav-link nav-button boton-verde boton-cambiante" href="#">Inscribirse</a>
-					</li>
-					<li class="nav-item" id="nav-loguearse">
-						<a class="nav-link nav-button boton-negro boton-cambiante" href="#">Loguearse</a>
-					</li>
-					<li class="nav-item" id="nav-plazo-cerrado">
-						<span class="text boton-gris boton-cambiante" href="#">Pechado</span>
-					</li>
-					<li class="nav-item" id="nav-inscrito">
-						<span class="text boton-verde boton-cambiante" id="posEnCola" href="#">Posicion</span>
-					</li>
-					<!-- fin de Boton cambiante-->
-				</ul>
-			</div>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent2">
+					<ul class="navbar-nav mr-auto" id="navbar-main-second-half">
+						<li class="nav-item" id="nav-inscribirse">
+							<a class="nav-link nav-button boton-verde boton-cambiante" href="#">INSCRÍBETE</a>
+						</li>
+						<li class="nav-item" id="nav-loguearse">
+							<a class="nav-link nav-button boton-negro boton-cambiante" href="#">
+								<i class="fa fa-user-o" aria-hidden="true"></i> LOGIN</a>
+						</li>
+						<li class="nav-item" id="nav-plazo-cerrado">
+							<span class="text boton-gris boton-cambiante" href="#">PECHADO</span>
+						</li>
+						<li class="nav-item" id="nav-inscrito">
+							<span class="text boton-verde boton-cambiante" id="posEnCola" href="#">Posicion</span>
+						</li>
+						<li class="nav-item" id="nav-perfil">
+							<span class="text boton-cambiante" id="boton-perfil"href="#"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+						</li>
+					</ul>
+				</div>
+				<!-- fin de Boton cambiante-->
 		</nav>
 
 <!--************** BLOQUE IZQUIERDO**********************-->
@@ -198,11 +206,17 @@
 						$("#nav-inscribirse").remove();
 						$("#nav-plazo-cerrado").remove();
 						$("#nav-inscrito").remove();
+						$("#nav-perfil").remove();
 					}else{
 						if(data.plazo_abierto){
 							if(data.esta_inscrito){
 								//se muestra posicion en la cola
-								$("#posEnCola").html("Posición en la cola: " + data.posicion_cola_inscritos);
+								//TODO CAMBIAR ESTO POR EL MÁXIMO DE PLAZAS QUE ME DA EL API
+								if(data.posicion_cola_inscritos <= 150){
+									$("#posEnCola").html("#" + data.posicion_cola_inscritos +" PLAZA");
+								}else{
+									$("#posEnCola").html("#" + data.posicion_cola_inscritos +" EN COLA");
+								}
 								$("#nav-inscribirse").remove();
 								$("#nav-plazo-cerrado").remove();
 								$("#nav-loguearse").remove();
