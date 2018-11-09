@@ -1,0 +1,4 @@
+RewriteEngine On
+
+ReWriteRule ^api/v([0-9]{1,2})/([a-zA-Z]+)$ api/v$1/controller.php/$2
+ReWriteRule ^api/v([0-9]{1,2})/([a-zA-Z]+)/[a-zA-Z0-9]+$ api/v$1/controller.php/$2/$3
