@@ -124,11 +124,9 @@ a:active{
 	background: #c9c9c9;
 	color: #333;
 }
-.nav-link.nav-button.boton-negro.boton-cambiante{
-	padding:2px 30px;
-}
+.nav-link.nav-button.boton-negro.boton-cambiante, 
 .nav-link.nav-button.boton-verde.boton-cambiante{
-	padding:2px 30px;
+	padding:1px 30px;
 }
 /*.boton-negro{
 	background: #000000;
@@ -152,7 +150,7 @@ a:active{
 }
 
 #navbar-main-first-half{
-	line-height:30px;
+	line-height:31px;
 }
 #navbar-main-second-half{
 	text-align: right !important;
