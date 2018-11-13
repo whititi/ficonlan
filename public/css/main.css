@@ -121,14 +121,20 @@ a:active{
 
 
 /******** CSS DE ANDRÉS ********************************************/
-
+.row{
+	/*margin-top: 10px;*/
+}
 .articulo{
 	position: relative;
-	margin: auto;
+	/*margin: auto;*/
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-top: 10px;
 }
 
 .fondo{
-	position: absolute;
+	/*position: absolute;*/
 	top: 0;
 	left: 0;
 }
@@ -142,13 +148,14 @@ a:active{
 	text-decoration-color: #000;
 }
 
-.articuloFooter{
+.artFooter{
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	background-color: rgba(0,0,0,0.6);
 	padding-left: 5px;
+	background-color: rgba(0,0,0,0.6);
+	text-decoration-color: #000;
 }
 
 /******** NO ESCRIBIR DE AQUI PARA BAJO SALVO PARA RESOLUCIONES MENORES DE 992px ***************************/
