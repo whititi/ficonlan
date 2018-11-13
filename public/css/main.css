@@ -17,13 +17,13 @@ body{
 	vertical-align: top;
 }
 .bloque-izq{
-	width: 69%;
+	width: 766px;
 	padding: 0 16px 0 16px;
-	height: 99%;
+	height: 100%;
 	margin-bottom: auto;
 }
 .bloque-dcho{
-	width: 29%;
+	width: 324px;
 	text-align: right;
 	padding: 0 0 0 16px;
 }
@@ -32,6 +32,9 @@ body{
 	display: block;
 	margin: 0 auto;
 }
+
+
+/**************************************** MENU ******************************************/
 .navbar {
 	background-color: white;
 	margin: 0;
@@ -44,15 +47,14 @@ body{
 	margin:0 0 0 0 !important;
 	width: 100%;
 }
-.nav-current-button {
+/*.nav-current-button {
 	background-color: #98ea3e;
-}
+}*/
 
 .nav-button:hover {
 	background-color: rgba(0,0,0,0.2);
 }
 
-/**************************************** MENU ******************************************/
 /* Style The Dropdown Button */
 .dropbtn {
     /*background-color: #6D6D6D;*/
@@ -98,7 +100,7 @@ body{
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-	margin-top: 5%;
+	margin-top: 10px;
 	text-decoration: none;
     display: block;
 }
@@ -121,14 +123,13 @@ body{
 
 
 .icos-redes{
-	
 	width: 40px;
 	height: 40px;
 
 }
-.links-redes{
+.linksRedes{
 	margin: auto auto 10px 0;
-	width: 33%;
+	width: calc(100% / 4);
 	text-align: center;
 	flex: 1;
 }
@@ -136,30 +137,26 @@ body{
 	width: 100%;
 	display: flex;
 }
-.thead-green{
+.theadFico{
 	background-color: #000;
 	text-align: center;
+	padding: 0;
 	color: #FFF;
 }
 
-#footer{padding-top: 1%; font-size: 12px; }
-.footerPpal{background-color: #504B4B; height: 30px !important; color: #FFF;
-	 
-}
+#footer{padding-top: 5px; font-size: 12px; }
+.footerPpal{background-color: #504B4B; height: 30px !important; color: #FFF;}
 
 
 .maxheight {max-height: 414px; width: 750px;}
 .imgpatrocinio {max-height: 144px;}
 
-.news{margin-top: inherit; margin-bottom: 1%;}
-.new div{padding: 1%;}
-.row{margin-top: 1%;}
+.news{margin-top: inherit; margin-bottom: 5px;}
+/*.new div{padding: 1%;}*/
+.row{margin-top: 5px;}
 
 
-.row1{margin:0; padding: 0;}
-
-
-
+.row1{margin:2px 0 0 0; padding: 0;}
 
 
 /******** CSS DE BRAN **************************************************************************************/
