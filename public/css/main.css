@@ -154,10 +154,15 @@ body{
 .news{margin-top: inherit; margin-bottom: 5px;}
 /*.new div{padding: 1%;}*/
 .row{margin-top: 5px;}
-
-
 .row1{margin:2px 0 0 0; padding: 0;}
+.h3{align-content: center;}
 
+hr{
+	border:0;
+	height: 25px;
+	background-image: url(../img/type_3.png);
+	background-repeat: no-repeat;
+}
 
 /******** CSS DE BRAN **************************************************************************************/
 .boton-cambiante{
