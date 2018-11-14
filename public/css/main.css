@@ -158,6 +158,48 @@ a:active{
 	text-decoration-color: #000;
 }
 
+.columnaNoticia{
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.datosNoticia{
+	margin-top: 10px;
+	width: fit-content;
+	background-color: #CDCDCD;
+	border-radius: 100px;
+	padding: 3px 20px;
+}
+
+.titularNoticia{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.author{
+	font-style: oblique;
+	font-size: 16px;
+	font-weight: lighter;
+	display: inline-block;
+	margin-left: 4px;
+}
+
+.fechaArt{
+	font-style: oblique;
+	font-size: 16px;
+	font-weight: lighter;
+	display: inline-block;
+	margin-left: 30px;
+	margin-right: 4px;
+}
+
+.cuerpoNoticia{
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
 /******** NO ESCRIBIR DE AQUI PARA BAJO SALVO PARA RESOLUCIONES MENORES DE 992px ***************************/
 @media only screen and (max-width: 992px) {
 	.content2 {
