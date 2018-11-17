@@ -34,6 +34,7 @@
 					</li>
 					<li class="nav-item dropdown">
 						<a class="dropbtn" href="torneos.html">TORNEOS</a>
+            <!----HACER UNA LISTA CON LOS TORNEOS QUE TENGAMOS O COMO?---->
 					</li>
 					<li class="nav-item dropdown">
             <a class="dropbtn">SOBRE NOSOTROS</a>
@@ -255,6 +256,7 @@
     <div class="col-4"><a>Contacto </a> <a>Enlace 2</a></div>
   </div>
 
+<!--************************************************* SCRIPTS ***************************************************-->
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.min.js"
 			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -293,7 +295,7 @@
 				});
 			});
 		</script>
-  
+<!--**** CARROUSEL PATROCINADORES ****-->
     <script>
       var crt=1;
       $(function(){
@@ -319,15 +321,64 @@
           },100);
       }
     </script>
-  <!--******* BOTON MENU **********-->
+  <!--******* Cronometro **********-->
     <script >
-     /* $('about a').on('click', function (e) {
-        e.preventDefault()
-        $(this).tab('show')
-      });*/
-      $(function () {
-        $('#about li:last-child a').tab('show')
-      })
+      date_default_timezone_set('Europe/Madrid');
+      //TODO supongo que tenemos que hacer este json
+      $dates = json_decode(file_get_contents($_SERVER["DOCUMENT_ROOT"].'/config/cuenta_atras.json'), true);
+
+      $hour=0; 
+      $min=0;
+      $seg=0;
+
+      if(!in_array(date('d/m/Y', time()), $dates["exceptions"])){
+        $start_hour=strtotime(date("d-m-Y")." ".$dates["start_hour"][0].":".$dates["start_hour"][1]);
+        $curr_hour=strtotime(date("d-m-Y H:i"));
+        $end_hour=strtotime(date("d-m-Y")." ".$dates["end_hour"][0].":".$dates["end_hour"][1]);
+        $diff=$end_hour-$curr_hour;
+        if ($curr_hour>$start_hour && $diff>0){
+          $seg=intval($diff);
+          $min=intval($seg/60);
+          $hour=intval($min/60);
+          $min=$min%60;
+          $seg=$seg%60;
+
+       /*   <div class="time">
+            <h4>¡Cuenta atrás! </h4>
+            <div><span class="hour"></span> hora/s : <span class=minutes"></span> minutos/s : <span class="seconds"></span> segundo/s</div>
+        */}
+      }
+
+      $(".time .hour").text(<?=$hour?>);
+      $(".time .min").text(<?=$min?>);
+      $(".time .seg").text(<?=$seg?>);
+
+      function updateTime(){
+        var hour
+        var min
+        var seg
+        if(seg==0){
+          if(hour==0 && min==0){
+            $(".time").remove();
+          }
+          seg=59;
+          if(min==0){
+            min=59;
+            hour--;
+          } else{
+            min--;
+          }
+        } else{
+          seg--;
+        }
+
+      $(".time .hour").text(hour);
+      $(".time .min").text(min);
+      $(".time .seg").text(seg);
+      }
+
+      window.setInterval(function(){updateTime()}, 1000);
+
     </script>
 	</body>
 </html>
