@@ -159,8 +159,12 @@ a:active{
 }
 
 .columnaNoticia{
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 31px;
+	padding-right: 31px;
+}
+
+.contenedorDatos{
+	display: inline-block;
 }
 
 .datosNoticia{
@@ -169,6 +173,16 @@ a:active{
 	background-color: #CDCDCD;
 	border-radius: 100px;
 	padding: 3px 20px;
+	display: inline-block;
+}
+
+.seccion{
+	margin-top: 10px;
+	width: fit-content;
+	background-color: #FF8800;
+	border-radius: 100px;
+	padding: 3px 20px;
+	display: inline-block;
 }
 
 .titularNoticia{
