@@ -120,100 +120,6 @@ a:active{
 .maxheight {max-height: 563px;}
 
 
-/******** CSS DE ANDRÉS ********************************************/
-.row{
-	/*margin-top: 10px;*/
-}
-.articulo{
-	position: relative;
-	/*margin: auto;*/
-	margin-right: 0px;
-	margin-left: 0px;
-	margin-bottom: 0px;
-	margin-top: 10px;
-}
-
-.fondo{
-	/*position: absolute;*/
-	top: 0;
-	left: 0;
-}
-
-.tipoNoticia{
-	position: absolute;
-	top: 0;
-	right: 0;
-	padding-left: 4px;
-	background-color: #FFF;
-	text-decoration-color: #000;
-}
-
-.artFooter{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	padding-left: 5px;
-	background-color: rgba(0,0,0,0.6);
-	text-decoration-color: #000;
-}
-
-.columnaNoticia{
-	padding-left: 31px;
-	padding-right: 31px;
-}
-
-.contenedorDatos{
-	display: inline-block;
-}
-
-.datosNoticia{
-	margin-top: 10px;
-	width: fit-content;
-	background-color: #CDCDCD;
-	border-radius: 100px;
-	padding: 3px 20px;
-	display: inline-block;
-}
-
-.seccion{
-	margin-top: 10px;
-	width: fit-content;
-	background-color: #FF8800;
-	border-radius: 100px;
-	padding: 3px 20px;
-	display: inline-block;
-}
-
-.titularNoticia{
-	margin-top: 20px;
-	margin-bottom: 20px;
-	font-size: 40px;
-	font-weight: bold;
-}
-
-.author{
-	font-style: oblique;
-	font-size: 16px;
-	font-weight: lighter;
-	display: inline-block;
-	margin-left: 4px;
-}
-
-.fechaArt{
-	font-style: oblique;
-	font-size: 16px;
-	font-weight: lighter;
-	display: inline-block;
-	margin-left: 30px;
-	margin-right: 4px;
-}
-
-.cuerpoNoticia{
-	font-size: 20px;
-	letter-spacing: 1px;
-}
-
 /******** NO ESCRIBIR DE AQUI PARA BAJO SALVO PARA RESOLUCIONES MENORES DE 992px ***************************/
 @media only screen and (max-width: 992px) {
 	.content2 {
@@ -231,4 +137,97 @@ a:active{
 		margin: auto;
 		text-align: center;
 	}
+}
+
+
+/**************************************** MENU ******************************************/
+.navbar {
+	background-color: white;
+	margin: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.5);
+	padding: 5px 30px;
+}
+#navbar-main {
+	margin:0 0 0 0 !important;
+	width: 100%;
+}
+/*.nav-current-button {
+	background-color: #98ea3e;
+}*/
+
+.nav-button:hover {
+	background-color: rgba(0,0,0,0.2);
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    /*background-color: #6D6D6D;*/
+    color: #000;
+    padding: 5px 30px;
+   /* font-size: 16px;*/
+    border: none;
+    cursor: pointer;
+   /* text-decoration: none;*/
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+   position: relative; display: inline-block;
+   text-decoration: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    text-decoration: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    max-width: 176px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover { 
+	background-color: rgba(0,0,0,.2);
+	text-decoration: none;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	margin-top: 10px;
+	text-decoration: none;
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: rgba(0,0,0,.2);
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-active{
+	padding: 0;
+	background-color: #B2A9A9;
+}
+
+.nav-active a { background-color: #B2A9A9;}
+
+/********************* FIN MENU *********************************/
+
+.carousel {
+	padding-left: 16px;
+	padding-right: 16px;
 }

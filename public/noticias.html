@@ -11,6 +11,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/png"/>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/beard.css">
 </head>
 <body>
 
@@ -19,32 +20,47 @@
         <img src="./img/logo.png" alt='Fic OnLan logo' class='logo'>
     </div>
 
-<!------------------ NAV BAR ---------------------------------------------------------------->
+<!--************* NAV BAR *****************-->
     <nav class="navbar navbar-expand-lg navbar-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle avigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto" id="navbar-main">
-                <li class="nav-item nav-active">
-                    <a class="nav-link nav-current-button" href="index.html">Home</a>
+                <li class="nav-item nav-active dropdown">
+                    <a class="dropbtn" href="index.html">INICIO</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-button" href="#">Boton</a>
+                <li class="nav-item dropdown">
+                    <a class="dropbtn" href="noticias.html">NOTICIAS</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-button" href="#">Boton</a>
+                <li class="nav-item dropdown">
+                    <a class="dropbtn" href="torneos.html">TORNEOS</a>
+        <!----HACER UNA LISTA CON LOS TORNEOS QUE TENGAMOS O COMO?---->
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-button" href="#">Boton</a>
+                <li class="nav-item dropdown">
+        <a class="dropbtn">SOBRE NOSOTROS</a>
+        <div class="dropdown-content">
+          <a href="#">QUIENES SOMOS</a>
+          <a href="#">CONTACTO</a>
+        </div>
+      </li>
+                <li class="nav-item dropdown">
+                    <a class="dropbtn" href="#">FORO</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-button" href="torneos.html">Torneos</a>
-                </li>
+                <!-- Boton cambiante -->
                 <li class="nav-item" id="nav-inscribirse">
-                    <a class="nav-link" href="#">Inscribirse</a>
+                    <a class="nav-link nav-button boton-verde boton-cambiante" href="#">Inscribirse</a>
                 </li>
+                <li class="nav-item" id="nav-loguearse">
+                    <a class="nav-link nav-button boton-negro boton-cambiante" href="#">Loguearse</a>
+                </li>
+                <li class="nav-item" id="nav-plazo-cerrado">
+                    <span class="text boton-gris boton-cambiante" href="#">Pechado</span>
+                </li>
+                <li class="nav-item" id="nav-inscrito">
+                    <span class="text boton-verde boton-cambiante" id="posEnCola" href="#">Posicion</span>
+                </li>
+                <!-- fin de Boton cambiante-->
             </ul>
         </div>
     </nav>
