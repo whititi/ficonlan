@@ -15,12 +15,13 @@
 	</head>
 	<body>		
 	<div class="container">
-		<div class="logo-content">
+    <!--*** Logo FicOnLan ***-->
+		<div class="logo-content barraResponsive">
 			<img src="./img/logo.png" alt='Fic OnLan logo' class='logo'>
 		</div>
 
 		<!--************* NAV BAR *****************-->
-		<nav class="navbar navbar-expand-lg navbar-light">
+		<nav class="navbar navbar-expand-lg navbar-light barraResponsive">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle avigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -34,7 +35,13 @@
 					</li>
 					<li class="nav-item dropdown">
 						<a class="dropbtn" href="torneos.html">TORNEOS</a>
-            <!----HACER UNA LISTA CON LOS TORNEOS QUE TENGAMOS O COMO?---->
+            <div class="dropdown-content">
+              <a href="/torneos/lol.html">LEAGUE OF LEGENDS</a>
+              <a href="/torneos/quake.html">QUAKE III</a>
+              <a href="/torneos/hearthstone.html">HEARTHSTONE</a>
+              <a href="/torneos/rocket.html">ROCKET LEAGUE</a>
+              <a href="/torneos/buzz.html">BUZZ</a>
+            </div>
 					</li>
 					<li class="nav-item dropdown">
             <a class="dropbtn">SOBRE NOSOTROS</a>
@@ -155,10 +162,13 @@
 <!--********************BLOQUE DERECHO***********************-->
 		<div class="bloque-dcho">
 			<div class="redes">
-				<a class='linksRedes' href='https://www.instagram.com/ficonlan/?hl=es' target="_blank"><img class='icos-redes' src='img/instagram.png' alt='instagram fic onlan'></a>
-				<a class='linksRedes' href='https://www.facebook.com/FicOnLan/' target="_blank"><img class='icos-redes' src='img/facebook.png' alt='facebok fic onlan'></a>
-				<a class='linksRedes' href='https://twitter.com/Fic_OnLan' target="_blank"><img class='icos-redes' src='img/twitter.png' alt='twitter fic onlan'></a>
-				<a class='linksRedes' href='https://www.youtube.com/channel/UCFargYlxhH0iCNB5UWCqlcQ' target="_blank"><img class='icos-redes' src='img/youtube.png' alt='Youtube fic onlan'></a>
+				<a class='linksRedes' href='https://www.instagram.com/ficonlan/' target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a class='linksRedes' href='https://www.facebook.com/FicOnLan/' target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+				<a class='linksRedes' href='https://twitter.com/Fic_OnLan' target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+				<a class='linksRedes' href='https://www.youtube.com/channel/UCFargYlxhH0iCNB5UWCqlcQ' target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+        <a class='linksRedes' href='https://www.youtube.com/channel/UCFargYlxhH0iCNB5UWCqlcQ' target="_blank"><i class="fa fa-twitch" aria-hidden="true"></i></a>
+
+
 			</div>
     <!--**** TABLA FICOPUNTOS ***-->
 			<table class="table">
@@ -186,7 +196,7 @@
 							<tr>
 								<td><span class='fa fa-user'></span></td>
 								<td>Nick</td>
-									<td>999</td>
+								<td>999</td>
 							</tr>
 							<tr>
 								<td><span class='fa fa-user'></span></td>
